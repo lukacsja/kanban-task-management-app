@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Typography  =====> */
+.text-heading-xl {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.text-heading-l {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+.text-heading-m {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+}
+.text-heading-s {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.4px;
+}
+
+.text-body-l {
+  font-weight: medium;
+  font-size: 13px;
+  line-height: 23px;
+}
+.text-body-m {
+  font-weight: medium;
+  font-size: 12px;
+  line-height: 15px;
+}
+/* <===== Typography */

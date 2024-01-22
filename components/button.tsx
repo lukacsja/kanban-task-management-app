@@ -2,24 +2,25 @@ import React from 'react';
 
 interface ButtonProps {
   title: string;
-  bgColor: 'primary' | 'secondary' | 'destructive';
+  bgColor: 'primary' | 'secondary' | 'red';
   height: 'L' | 'S';
+  width?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, bgColor, height }) => {
+const Button: React.FC<ButtonProps> = ({ title, bgColor, height, width }) => {
   const buttonStyles = {
     height: height === 'L' ? 'h-12 text-l' : 'h-10 text-m',
     bgColor:
       bgColor === 'primary'
-        ? 'bg-primary hover:bg-secondary'
+        ? 'bg-purpleMain hover:bg-purpleHover'
         : bgColor === 'secondary'
-          ? 'bg-grayExtraLight bg-grayExtraLight hover:bg-grayLight text-primary'
-          : 'bg-danger hover:bg-dangerLight',
+          ? 'bg-grayLightBg hover:bg-grayMedium text-purpleMain'
+          : 'bg-red hover:bg-redHover',
   };
 
   return (
     <button
-      className={`w-full rounded-3xl font-bold text-white ${buttonStyles.height} ${buttonStyles.bgColor}`}
+      className={`${width} rounded-3xl font-bold text-white ${buttonStyles.height} ${buttonStyles.bgColor}`}
     >
       {title}
     </button>

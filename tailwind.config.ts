@@ -9,17 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#635FC7',
-        secondary: '#A8A4FF',
-        background: '#000112',
-        text: '#20212C',
+        purpleMain: '#635FC7',
+        purpleHover: '#A8A4FF',
+        grayDarkest: '#000112',
+        grayVeryDark: '#20212C',
         grayDark: '#2B2C37',
-        grayMedium: '#3E3F4E',
-        grayLight: '#828FA3',
-        grayExtraLight: '#E4EBFA',
+        grayDarkLines: '#3E3F4E',
+        grayMedium: '#828FA3',
+        grayLightLines: '#E4EBFA',
+        grayLightBg: '#F4F7FD',
         white: '#FFFFFF',
-        danger: '#EA5555',
-        dangerLight: '#FF9898',
+        red: '#EA5555',
+        redHover: '#FF9898',
       },
       fontSize: {
         '2xl': '24px',
